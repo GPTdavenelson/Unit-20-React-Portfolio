@@ -1,7 +1,13 @@
 // React
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 
 const Nav = (props) => {
+    let history = useHistory();
+
+    const handleClick = (value) => {
+        history.push(`/${value}`);
+    };
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light static-top shadow">
             <div className="container">
@@ -22,16 +28,14 @@ const Nav = (props) => {
 
                 <div className="collapse navbar-collapse" id="navbarResponsive">
                     <ul className="navbar-nav ml-auto">
-                        <li className="nav-item active">
-                            <a className="nav-link" href="/">
+                        <li className="nav-item active" onClick={(e) => history.push('/')}>
+                            <div className="nav-link">
                                 About Me
                                 <span className="sr-only">(current)</span>
-                            </a>
+                            </div>
                         </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/portfolio">
-                                Portfolio
-                            </a>
+                        <li className="nav-item" onClick={(e) => history.push('/portfolio')}>
+                            <div className="nav-link">Portfolio</div>
                         </li>
                     </ul>
                 </div>

@@ -1,10 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Switch, Route } from 'react-router-dom';
-import { Router } from 'react-router';
-
-import ReactDOMServer from 'react-dom/server';
-import { StaticRouter } from 'react-router-dom';
+import { Route, Router, Switch } from 'react-router-dom';
 
 import { createBrowserHistory } from 'history';
 

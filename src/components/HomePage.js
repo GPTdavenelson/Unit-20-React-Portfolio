@@ -4,7 +4,7 @@ function HomePage(props) {
     return (
         <div className="app-body">
             <div className="container">
-                <div class="card border-0 shadow my-5">
+                <div className="card border-0 shadow my-5">
                     <div className="card-body p-5">
                         <div className="row">
                             <div className="col-md-12">
