@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+        'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.app-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: url('/city.jpg');
+}
+
+.portfolio-body {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.footer {
+    background: #e2e2e2;
+    flex-grow: 1;
+    padding: 30px;
+}
+.card-item {
+    display: flex;
+}
+.project-image {
+    max-height: 200px;
+    object-fit: cover;
+}
